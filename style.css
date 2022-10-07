@@ -1,0 +1,340 @@
+@keyframes fade {
+    from{opacity: 0.3;}
+    to{opacity: 1;}
+}
+:root{
+    --blue:rgb(0, 82, 150);
+    --green:rgba(2, 232, 205, 0.2);
+    --blueHover: rgb(0,60,130);
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    animation: fade 1s;
+    transition: 0.3s;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:target{
+    scroll-margin-top: 4rem;
+}
+
+#modal{
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 82, 150, 0.548);
+    display: none;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    
+}
+#modal button{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+#modal iframe{
+    margin: 0 0%;
+    width: 100%;
+    height: 100%;
+}
+
+#barraSuperior{
+    padding: 8px;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+#barraSuperior #logo img{
+    height: 2rem;
+}
+#menu{
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    list-style: none;
+}
+#imgMenu{
+    display: none;
+}
+#menu a{
+    text-decoration: none;
+    color: rgb(0,0,44);
+}
+#menu a:hover{
+    color: gray;
+}
+#menu li:last-child a{
+    text-decoration: none;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: 0.5s;
+}
+#menu li:last-child a:hover{
+    color: white;
+    background-color: var(--blueHover);
+}
+#home{
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.651)), url("./assets/images/pexels-christina-morillo-1181269.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed ;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10vh;
+    color: rgb(231, 231, 231);
+}
+#home article{
+    max-width: 650px;
+    padding-top: 60px;
+}
+#home span{
+
+    font-family: 'Redressed', cursive;
+    font-size: 7rem;
+    display: block;
+}
+#home article h2{
+    font-size: 4rem;
+}
+#home p{
+    margin-top: 60px;
+    display: block;
+    text-align: end;
+}
+#home img{
+    border-radius: 50%;
+    filter: brightness(1.3);
+}
+#sobre{
+    background: linear-gradient(to right bottom, rgb(0, 0, 44), rgb(0, 0, 30));
+    color: white;
+    position: relative;
+    padding: 32px 16px;
+}
+#sobreMim{
+    padding: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#sobreMim p{
+    line-height: 1.5rem;
+    margin-top: 16px;
+    font-size: 1.2rem;
+}
+#conhecimentos{
+    background-color: aliceblue;
+    color: black;
+    padding: 0 0 32px 0;
+    margin-top: 40px;
+}
+#conhecimentos h2{
+    padding-top: 36px;
+    text-align: center;
+    display: block;
+}
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+.skill{
+    width: 80px;
+    text-align: center;
+}
+.skill img {
+    width: 48px;
+}
+#tags{
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+#servicos{
+    background: aliceblue;
+
+}
+#servicos h2{
+    text-align: center;
+    padding-top: 64px;
+}
+#conhecimentos h2, #servicos h2{
+    color: var(--blueHover);
+    font-size: 3rem;
+    margin:  0 0 32px 0;
+}
+.tag{
+    background: linear-gradient(to right bottom, rgb(0, 0, 44), rgb(0, 0, 30));
+    color: white;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 300px;
+    border-radius: 4px;
+}
+.tag button{
+    border-radius: 4px;
+    text-align: center;
+    background-color: var(--blue);
+    color: rgb(226, 226, 226);
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+.tag button:hover{
+    background-color: var(--blueHover);
+}
+#contato{
+    color: rgb(236, 236, 236);
+    background: linear-gradient(to right bottom, rgb(0,0,44), rgb(0,0,30));
+    padding: 32px;
+
+}
+#contato #email{
+    display: block;
+    text-align: center;
+}
+#contato h2{
+    padding: 32px;
+    text-align: center;
+}
+#social{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    gap: 16px;
+    
+}
+#social img{
+    width: 48px;
+}
+
+@media (max-width:1001px) {
+
+
+    #barraSuperior{
+        width: 100%;
+        justify-content: space-between;
+    }
+   
+    #imgMenu{
+        width: 24px;
+    }
+    #menu{
+        position: absolute;
+        top: -16px;
+        right: 8px;
+        cursor: pointer;
+        height: 0;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        transition: 1s;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 44);
+
+    }
+    #menu:hover{
+        height: max-content;
+        padding: 16px 8px;
+    }
+    #menu:hover li {
+        display: block;
+        padding: 12px;
+    }
+    
+    #menu li{
+        width: 130px;
+        display: none;
+        text-align: center;
+    }
+    #menu li a{
+        color: white;
+
+    }
+
+    #menu li:last-child a{
+        margin-top: 32px;
+        color: white;
+        border: 1px solid white;
+    }
+    #menu li:last-child a:hover{
+        color: white;
+        background-color: var(--blue);
+    
+    
+    }
+
+
+    #imgMenu{
+        display: block;
+    }
+
+
+    #home{
+        flex-wrap: wrap;
+        height: auto;
+        margin: 0;
+        padding: 6rem 0 0 0;
+        align-items: center;
+    }
+
+    #home img{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    #home article{
+        padding: 16px;
+        width: 100%;
+        margin: 0;
+    }
+    #home article h2{
+        font-size: 2rem;
+    }
+    #home span{
+        font-size: 3rem;
+    }
+    #home p{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .tag{
+        max-width: 600px;
+        }
+}
+@media (max-width:600px) {
+    .tag{
+        max-width: 95vw;
+        }
+        #contato{
+            padding: 16px;
+        }
+}

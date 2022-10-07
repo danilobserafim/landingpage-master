@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Danilo Serafim</title>
+</head>
+<body>
+    <header id="barraSuperior">
+        <div id="logo">
+            <img src="./assets/images/wings.png" alt="" id="logo"><br>
+        </div>
+        
+        <ul id="menu">
+            <img src="./assets/images/BurgerMenu.png" alt="Menu" id="imgMenu">
+            <li><a href="#home">Home </a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <article>
+            <h2>Olá, Eu sou <span>Danilo Serafim</span></h2>
+            <p>Web designer e <br> desenvolvedor de software</p>
+        </article>
+        
+    </section>
+    <section id="sobre">
+        <div id="sobreMim">
+                <p>
+                    Sou um profissional com experiência no desenvolvimento de 
+                    sites e aplicativos web. Posso ajudá-lo a construir sua presença on-line, 
+                    tornando sua visão tangível e funcional.</p>
+                    <p>Muito sério em meu trabalho e adoro ajudar outras pessoas, além de meu grande 
+                        conhecimento de tecnologia, coloco em prática todas as minhas habilidades em 
+                        diferentes áreas com grandes resultados.
+                    </p>
+        </div>
+        <div id="conhecimentos">
+            <h2>Habilidades</h2>
+            <div id="skills">
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-html-5.svg" alt="#">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-css3.svg" alt="#">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-javascript.svg" alt="#">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-nativo-de-reagir.svg" alt="#">
+                    <p>React js</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-sass.svg" alt="#">
+                    <p>Sass</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-bootstrap.svg" alt="#">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/responsive.png" alt="#">
+                    <p>Design responsivo</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-node-js.svg" alt="#">
+                    <p>Node js</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/PHP.png" alt="#">
+                    <p>PHP</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/icons8-mysql-logo.svg" alt="#">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img src="./assets/images/skills/rest.png" alt="#">
+                    <p>API Rest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicos">
+        <h2>Produtos e Serviços</h2>
+        <div id="tags">
+            <div class="tag">
+                <h3>Web Sites e Landing Pages</h3>
+                <p>Num mundo globalizado quem não está na internet não está em lugar nenhum. 
+                    Crie seu site e divulgue sua empresa ou produto!
+                </p>
+                <button onclick="mostraModal('landing')">Saiba Mais</button>
+            </div>
+            <div class="tag">
+                <h3>Web Apps</h3>
+                <p>Coloque suas idéias em prática! <br>
+                    Use mapas, armazene e gerencie dados da forma que for necessária para administrar sua empresa ou agradar seu usuário. 
+                       
+                </p>
+                <button onclick="mostraModal('webapp')">Saiba Mais</button>
+            </div>
+            <div class="tag">
+                <h3>Seu negócio no Google</h3>
+                <p>Seja encontrado onde as vendas acontecem, no google!
+                    O SEO e ADS que você precisa para ser visto pelo cliente certo, mostre sua marca ou produto para quem realmente quer! 
+
+                </p>
+                <button onclick="mostraModal('google')">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
+    <footer id="contato">
+        <h2>Entre em contato!</h2>
+        <span id="email">
+            E-mail: danilob.serafim@gmail.com
+        </span>
+        <div id="content">
+            <div id="social">
+                <a href="https://github.com/danilobserafim" target="_blank">
+                    <img src="./assets/images/social/github.png" alt=""> 
+                </a>
+                <a href="https://www.linkedin.com/in/danilo-barbosa-serafim-879b5b159/" target="_blank">
+                    <img src="./assets/images/social/linkedin.png" alt=""> 
+                </a>
+                <a href=" https://wa.me/5581983567279" target="_blank">
+                    <img src="./assets/images/social/WhatsApp.png" alt=""> 
+                </a>
+
+            </div>
+        </div>
+    </footer>
+    <div id="modal">
+        <button onclick="escondeModal()">X</button>
+        <iframe src="" frameborder="0" id="iframeModal"></iframe>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
